@@ -4,4 +4,4 @@ function greet(name:string,date:Date){
   console.log(`name+${date.toDateString()}`)
 }
 
-greet('yangshihao',new Date());
+greet('yangshiha1o',new Date());
