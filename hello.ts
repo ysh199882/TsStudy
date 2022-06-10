@@ -77,3 +77,5 @@ type Bear2 = Animal1 & {
   age:number
 }
 
+//类型断言
+
