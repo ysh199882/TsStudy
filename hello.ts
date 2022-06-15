@@ -77,5 +77,27 @@ type Bear2 = Animal1 & {
   age:number
 }
 
-//类型断言
+//双重类型断言
+const a = (expr as any) as T
+
+//字面量类型
+
+const ab = {count:1}
+
+function ok3(method:'GET' | 'POST'){
+  return method
+}
+
+const req = {method:'SUCCESS'}
+
+ok3(req.method as 'GET')
+
+
+//非空断言操作符 ！
+
+function ok4(
+  x?:number|null
+){
+  return x!.toUpperCase()
+}
 
